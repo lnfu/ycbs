@@ -1,7 +1,129 @@
-h2 {
-  background-color: yellow; }
+@charset "UTF-8";
+/* MEDIA */
+/* SCSS HEX */
+@font-face {
+  font-family: "LINESeed";
+  src: url("fonts/LINESeed_W_Bd.woff") format("woff");
+  font-weight: bold; }
 
-h1 {
-  background-color: blue; }
+@font-face {
+  font-family: "LINESeed";
+  src: url("fonts/LINESeed_W_Rg.woff") format("woff");
+  font-weight: regular; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: LINESeed; }
+
+a {
+  color: #f2f2f2ff;
+  text-decoration: none; }
+
+a:hover {
+  color: #c5c6c7;
+  transition: 0.3s; }
+
+body {
+  /* 留給 nav bar */
+  padding-top: 75px; }
+
+nav.navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #0F1C3Eff;
+  font-size: 30px; }
+  nav.navbar .navbar-wrapper {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    position: relative; }
+    nav.navbar .navbar-wrapper .logo img {
+      display: block;
+      height: 30px;
+      margin: 0 20px; }
+    nav.navbar .navbar-wrapper input#nav-toggle {
+      display: none; }
+    nav.navbar .navbar-wrapper input#nav-toggle:checked + nav {
+      display: flex;
+      flex-direction: column; }
+    nav.navbar .navbar-wrapper nav {
+      margin-top: 75px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      display: none;
+      background-color: #0b0c10ff; }
+    nav.navbar .navbar-wrapper nav a {
+      padding: 30px 0;
+      text-align: center;
+      border-bottom: #c5c6c7 2px solid; }
+    nav.navbar .navbar-wrapper label.nav-btn {
+      /* 漢堡按鈕 */
+      position: absolute;
+      right: 0;
+      height: 40px;
+      width: 40px;
+      margin: 0 20px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      nav.navbar .navbar-wrapper label.nav-btn div,
+      nav.navbar .navbar-wrapper label.nav-btn div::before,
+      nav.navbar .navbar-wrapper label.nav-btn div::after {
+        height: 4px;
+        width: 40px;
+        border-radius: 2px;
+        background-color: #f2f2f2ff;
+        position: absolute; }
+      nav.navbar .navbar-wrapper label.nav-btn div::before {
+        content: '';
+        margin-top: -10px; }
+      nav.navbar .navbar-wrapper label.nav-btn div::after {
+        content: '';
+        margin-top: 10px; }
+
+@media screen and (min-width: 1200px) {
+  nav.navbar {
+    font-size: 20px; }
+    nav.navbar .navbar-wrapper {
+      max-width: 1440px;
+      margin: 0 auto; }
+      nav.navbar .navbar-wrapper label.nav-btn {
+        display: none; }
+      nav.navbar .navbar-wrapper nav {
+        display: block;
+        width: auto;
+        background-color: inherit;
+        position: relative;
+        margin: 0 35px 0 auto; }
+        nav.navbar .navbar-wrapper nav a {
+          padding: 6px 12px;
+          border-bottom: none; }
+        nav.navbar .navbar-wrapper nav a.nav-signup-btn {
+          border-radius: 15px;
+          background-color: #fff;
+          color: #111; } }
+
+footer {
+  background-color: #0F1C3Eff;
+  color: #f2f2f2ff; }
+
+.copyright {
+  background-color: #0b0c10ff;
+  color: #f2f2f2ff;
+  text-align: center;
+  font-size: x-small; }
+
+.key-vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 75px); }
+  .key-vision img {
+    height: 90%; }
 
 /*# sourceMappingURL=style.scss.css.map */

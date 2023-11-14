@@ -1,0 +1,42 @@
+@media screen and (min-width:$medium) {
+
+    nav.navbar {
+        font-size: 20px; // 字體調小一點才塞的下
+
+        .navbar-wrapper {
+            max-width: $large;
+            margin: 0 auto; // 左右置中
+
+            label.nav-btn {
+                // 電腦不像是手機要有漢堡選單，直接顯示就好
+                display: none;
+            }
+
+            nav {
+                // 電腦不像是手機要有漢堡選單，直接顯示就好
+                display: block;
+                width: auto;
+                background-color: inherit;
+                position: relative;
+                margin: 0 35px 0 auto;
+
+                a {
+                    padding: 6px 12px;
+                    border-bottom: none; // 不要有白色底線
+                }
+
+                a.nav-signup-btn {
+                    // 報名按鈕特別
+                    border-radius: 15px;
+                    background-color: #fff;
+                    color: #111;
+                }
+            }
+
+
+        }
+
+
+
+    }
+}

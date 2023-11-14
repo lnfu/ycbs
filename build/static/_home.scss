@@ -1,0 +1,10 @@
+.key-vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - #{$navbar-height});
+
+    img {
+        height: 90%;
+    }
+}

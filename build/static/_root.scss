@@ -1,0 +1,49 @@
+/* MEDIA */
+$small: 390px;
+$medium: 1200px;
+$large: 1440px;
+
+/* SCSS HEX */
+$amaranth-purple: #A62948ff;
+$tiffany-blue: #95CABBff;
+$pearl: #E7DFC2ff;
+$oxford-blue: #0F1C3Eff;
+$white: #f2f2f2ff;
+$gray: #c5c6c7;
+$black: #0b0c10ff;
+
+$navbar-height: 75px;
+
+@font-face {
+    font-family: "LINESeed";
+    src: url("fonts/LINESeed_W_Bd.woff") format("woff");
+    font-weight: bold
+}
+
+@font-face {
+    font-family: "LINESeed";
+    src: url("fonts/LINESeed_W_Rg.woff") format("woff");
+    font-weight: regular
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: LINESeed;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $gray;
+    transition: 0.3s;
+}
+
+body {
+    /* 留給 nav bar */
+    padding-top: $navbar-height;
+}

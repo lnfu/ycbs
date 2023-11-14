@@ -1,7 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}首頁{% endblock %}
-{% block lead %}<h1>test</h1>{%endblock %}
+{% block lead %}
+
+<div class="key-vision">
+    <img src="{{ url_for('static', filename = 'assets/images/key-vision.png') }}" alt="YCBS 2024 主視覺">
+</div>
+
+{%endblock %}
 
 {% block page_content %}
 
