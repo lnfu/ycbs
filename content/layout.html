@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'assets/favicon.ico') }}" />
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename = 'style.scss.css') }}" rel="stylesheet">
+
+    <title>{% block title %}{% endblock %} | YCBS 2024</title>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    {% include 'menu.html' %}
+
+    <!-- Header -->
+    {% block lead %}{% endblock %}
+
+    <!-- Page Content -->
+    <div class="container">
+        {% block page_content %}{% endblock %}
+    </div>
+
+    <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+    {% include 'footer.html' %}
+</body>
+
+</html>
