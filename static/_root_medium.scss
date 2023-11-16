@@ -1,0 +1,27 @@
+@media screen and (min-width:$medium) {
+    .container {
+        h1 {
+            font-size: xxx-large;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: xx-large;
+        }
+
+        h3 {
+            font-size: x-large;
+        }
+
+        p {
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+    }
+
+    .content {
+        margin: 0 auto;
+        padding: 50px 35px 70px;
+        max-width: $medium;
+    }
+}

@@ -14,7 +14,8 @@
             <a href="{{ url_for('pages', page='intern') }}">實習計畫</a>
             <a href="{{ url_for('pages', page='organizer') }}">主辦單位</a>
             <a href="{{ url_for('pages', page='admission') }}">錄取名單</a>
-            <a href="/signup" class="nav-signup-btn">立即報名</a>
+            <a href="{{ url_for('pages', page='signup') }}" class="nav-signup-btn">立即報名</a>
+            <!-- <a href="/signup" class="nav-signup-btn">立即報名</a> -->
         </nav>
         <label for="nav-toggle" class="nav-btn">
             <div></div>

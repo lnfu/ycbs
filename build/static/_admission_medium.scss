@@ -1,0 +1,21 @@
+@media screen and (min-width:$medium) {
+
+    .admission-list {
+        img {
+            width: 500px;
+        }
+
+        .row {
+            justify-content: left;
+
+            .column {
+                width: 30%;
+
+                .item {
+                    span+span {}
+                }
+            }
+        }
+    }
+
+}

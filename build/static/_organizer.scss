@@ -1,0 +1,17 @@
+.organizer-container {
+
+    .organizer-item {
+        padding: 20px;
+        border: 2px solid $gray;
+        margin-bottom: 10px;
+
+        p {
+            text-align: justify;
+        }
+
+        img {
+            float: right;
+            width: 35%;
+        }
+    }
+}

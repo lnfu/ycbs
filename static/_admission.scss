@@ -1,0 +1,19 @@
+.admission-list {
+    img {
+        width: 300px;
+    }
+
+    .row {
+        .column {
+            width: 100%;
+
+            .item {
+                font-size: larger;
+
+                span+span {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ nav.navbar {
     position: fixed;
     top: 0;
 
-    background-color: $oxford-blue;
+    background-color: $oxford-blue-1;
     font-size: 30px;
 
     .navbar-wrapper {
@@ -17,7 +17,7 @@ nav.navbar {
         .logo img {
             display: block;
             height: 30px;
-            margin: 0 20px;
+            margin: 0 35px;
         }
 
         input#nav-toggle {
@@ -35,13 +35,13 @@ nav.navbar {
             position: absolute;
             top: 0;
             display: none;
-            background-color: $black;
+            background-color: $oxford-blue-2;
         }
 
         nav a {
             padding: 30px 0;
             text-align: center;
-            border-bottom: $gray 2px solid;
+            border-bottom: $oxford-blue-1 2px solid;
         }
 
         label.nav-btn {

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}報名{% endblock %}
+{% block lead %}可能之後用卡片而不是頁面來做，這邊只是 demo 表單效果{% endblock %}
+
+{% block page_content %}
+
+
+<!-- action裡的網址，從google form的檢視表單，再用開發人員工具，搜尋「formResponse」可以看到 -->
+<form onsubmit="sent_redirect=true" target="iframe_redirect" class=""
+    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5XJTVJsTRjgK6kiRFnum5y0raRYppmrxOk5FtLvcuckC3aw/formResponse"
+    method="post">
+    <div>
+        <!-- name值，從google form的檢視表單，再用開發人員工具，搜尋「entry.」可以看到 -->
+        <input type="text" name="entry.508763580" value="">
+    </div>
+    <button type="submit" name="button" value="submit">submit</button>
+
+</form>
+
+
+{% endblock %}

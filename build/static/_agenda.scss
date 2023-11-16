@@ -1,0 +1,66 @@
+.agenda {
+
+    .day {
+        width: 100%;
+        margin-bottom: 10px;
+
+        .session {
+            padding: 10px;
+            color: $white;
+            background-color: $oxford-blue-2;
+            box-shadow: 4px 4px $tiffany-blue-1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .session+.session {
+            margin-top: 10px;
+        }
+
+
+        .session-1 {
+            height: 240px;
+        }
+
+        .session-2 {
+            height: 80px;
+        }
+
+        .session-3 {
+            height: 480px;
+        }
+
+        .session-4 {
+            height: 240px;
+        }
+
+        .session-5 {
+            height: 240px;
+        }
+
+        .session-6 {
+            height: 160px;
+        }
+
+        .session-launch {
+            height: 50px;
+            background-color: $oxford-blue-4;
+            box-shadow: 4px 4px $tiffany-blue-1;
+        }
+
+        .session-8 {
+            height: 960px;
+        }
+
+        .session-9 {
+            height: 80px;
+        }
+
+        .session-10 {
+            height: 560px;
+        }
+    }
+}

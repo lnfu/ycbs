@@ -1,16 +1,24 @@
 /* MEDIA */
 $small: 390px;
-$medium: 1200px;
-$large: 1440px;
+$medium: 1440px;
+$large: 2560px;
 
 /* SCSS HEX */
 $amaranth-purple: #A62948ff;
-$tiffany-blue: #95CABBff;
+$tiffany-blue-1: rgb(134, 190, 174);
+$tiffany-blue-2: #d6ebe5;
 $pearl: #E7DFC2ff;
-$oxford-blue: #0F1C3Eff;
+$oxford-blue-1: #0F1C3Eff;
+$oxford-blue-2: #00336eff;
+$oxford-blue-3: #0058bdff;
+$oxford-blue-4: #2088ffff;
+$oxford-blue-5: #82bcffff;
 $white: #f2f2f2ff;
-$gray: #c5c6c7;
+$snow: #fffafa;
+$blue: #a9d8eb;
+$gray: rgb(44, 44, 44);
 $black: #0b0c10ff;
+
 
 $navbar-height: 75px;
 
@@ -39,11 +47,68 @@ a {
 }
 
 a:hover {
-    color: $gray;
+    color: $pearl;
     transition: 0.3s;
 }
 
 body {
     /* 留給 nav bar */
     padding-top: $navbar-height;
+}
+
+.container {
+    h1 {
+        font-size: xx-large;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: larger;
+    }
+
+    p {
+        font-size: larger;
+        margin-bottom: 10px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.bg-1 {
+    background: radial-gradient(ellipse at center, $tiffany-blue-1, $oxford-blue-2);
+    // background: radial-gradient(circle at center, yellow, red);
+    color: $white;
+}
+
+.bg-2 {
+    background:
+        radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+        radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+        radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+        radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+    color: $white;
+}
+
+.bg-3 {
+    background: conic-gradient(at 0% 0%, $snow, $white);
+    color: $gray;
+}
+
+.content {
+    margin: 0 10px;
+    padding: 30px 0 50px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
