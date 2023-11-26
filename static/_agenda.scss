@@ -1,66 +1,90 @@
 .agenda {
+  .day {
+    width: 100%;
+    margin-bottom: 10px;
 
-    .day {
-        width: 100%;
-        margin-bottom: 10px;
+    .session {
+      // padding: 10px;
+      color: $white;
+      background-color: $tiffany-blue-1;
+      //   box-shadow: 4px 4px $tiffany-blue-1;
 
-        .session {
-            padding: 10px;
-            color: $white;
-            background-color: $oxford-blue-2;
-            box-shadow: 4px 4px $tiffany-blue-1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+      .time-slot {
+        display: none;
+      }
 
-        }
+      .session-title,
+      .session-presenter {
+        display: block;
+      }
 
-        .session+.session {
-            margin-top: 10px;
-        }
-
-
-        .session-1 {
-            height: 240px;
-        }
-
-        .session-2 {
-            height: 80px;
-        }
-
-        .session-3 {
-            height: 480px;
-        }
-
-        .session-4 {
-            height: 240px;
-        }
-
-        .session-5 {
-            height: 240px;
-        }
-
-        .session-6 {
-            height: 160px;
-        }
-
-        .session-launch {
-            height: 50px;
-            background-color: $oxford-blue-4;
-            box-shadow: 4px 4px $tiffany-blue-1;
-        }
-
-        .session-8 {
-            height: 960px;
-        }
-
-        .session-9 {
-            height: 80px;
-        }
-
-        .session-10 {
-            height: 560px;
-        }
+      box-sizing: border-box;
+      border: 1px solid #ccc;
     }
+
+    .session:hover {
+      background: none;
+
+      .time-slot {
+        display: block;
+      }
+
+      .session-title,
+      .session-presenter {
+        display: none;
+      }
+    }
+
+    .session:focus {
+      background: none;
+
+      .time-slot {
+        display: block;
+      }
+
+      .session-title,
+      .session-presenter {
+        display: none;
+      }
+    }
+
+    // .session + .session {
+    //   margin-top: 2px;
+    // }
+
+    .session-lunch {
+      height: 70px;
+      background-color: $amaranth-purple;
+    }
+    .session-activity {
+      // height: 50px;
+      // background-color: gray;
+      // background: linear-gradient(
+      //   0deg,
+      //   rgba(165, 212, 197, 1) 0%,
+      //   rgba(235, 168, 115, 1) 46%,
+      //   rgba(244, 197, 57, 1) 100%
+      // );
+      background-color: $oxford-blue-2;
+    }
+
+    .session-class {
+      // height: 50px;
+      // background: linear-gradient(
+      //   0deg,
+      //   rgba(55, 198, 184, 1) 0%,
+      //   rgba(76, 142, 203, 1) 49%,
+      //   rgba(233, 168, 198, 1) 100%
+      // );
+      background-color: $oxford-blue-5;
+    }
+    .session-blank {
+      // height: 50px;
+      background-color: $black;
+    }
+  }
 }

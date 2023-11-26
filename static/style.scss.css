@@ -17,19 +17,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: LINESeed; }
+  font-family: LINESeed;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Chrome Safari */
+  -moz-user-select: none;
+  /* Firefox */ }
 
 a {
   color: #f2f2f2ff;
   text-decoration: none; }
 
 a:hover {
-  color: #E7DFC2ff;
+  color: #e7dfc2ff;
   transition: 0.3s; }
 
 body {
   /* 留給 nav bar */
-  padding-top: 75px; }
+  padding-top: 75px;
+  min-height: 100vh; }
 
 .container h1 {
   font-size: xx-large;
@@ -61,6 +67,14 @@ body {
   background: conic-gradient(at 0% 0%, #fffafa, #f2f2f2ff);
   color: #2c2c2c; }
 
+.bg-4 {
+  background: #0b0c10ff;
+  color: snow; }
+
+.bg-5 {
+  background: #0058bdff;
+  color: snow; }
+
 .content {
   margin: 0 10px;
   padding: 30px 0 50px; }
@@ -90,7 +104,7 @@ nav.navbar {
   width: 100vw;
   position: fixed;
   top: 0;
-  background-color: #0F1C3Eff;
+  background-color: #0f1c3eff;
   font-size: 30px; }
   nav.navbar .navbar-wrapper {
     display: flex;
@@ -116,7 +130,7 @@ nav.navbar {
     nav.navbar .navbar-wrapper nav a {
       padding: 30px 0;
       text-align: center;
-      border-bottom: #0F1C3Eff 2px solid; }
+      border-bottom: #0f1c3eff 2px solid; }
     nav.navbar .navbar-wrapper label.nav-btn {
       /* 漢堡按鈕 */
       position: absolute;
@@ -166,7 +180,7 @@ nav.navbar {
           color: #111; } }
 
 footer {
-  background-color: #0F1C3Eff;
+  background-color: #0f1c3eff;
   color: #f2f2f2ff; }
   footer .footer-wrapper {
     margin: 0 10px;
@@ -265,7 +279,7 @@ footer {
     width: 100%; }
 
 .camp-info {
-  color: #A62948ff;
+  color: #a62948ff;
   align-items: flex-end; }
   .camp-info .date {
     padding: 20px 0;
@@ -311,37 +325,41 @@ footer {
   width: 100%;
   margin-bottom: 10px; }
   .agenda .day .session {
-    padding: 10px;
     color: #f2f2f2ff;
-    background-color: #00336eff;
-    box-shadow: 4px 4px #86beae;
+    background-color: #86beae;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-  .agenda .day .session + .session {
-    margin-top: 10px; }
-  .agenda .day .session-1 {
-    height: 240px; }
-  .agenda .day .session-2 {
-    height: 80px; }
-  .agenda .day .session-3 {
-    height: 480px; }
-  .agenda .day .session-4 {
-    height: 240px; }
-  .agenda .day .session-5 {
-    height: 240px; }
-  .agenda .day .session-6 {
-    height: 160px; }
-  .agenda .day .session-launch {
-    height: 50px;
-    background-color: #2088ffff;
-    box-shadow: 4px 4px #86beae; }
-  .agenda .day .session-8 {
-    height: 960px; }
-  .agenda .day .session-9 {
-    height: 80px; }
-  .agenda .day .session-10 {
-    height: 560px; }
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc; }
+    .agenda .day .session .time-slot {
+      display: none; }
+    .agenda .day .session .session-title,
+    .agenda .day .session .session-presenter {
+      display: block; }
+  .agenda .day .session:hover {
+    background: none; }
+    .agenda .day .session:hover .time-slot {
+      display: block; }
+    .agenda .day .session:hover .session-title,
+    .agenda .day .session:hover .session-presenter {
+      display: none; }
+  .agenda .day .session:focus {
+    background: none; }
+    .agenda .day .session:focus .time-slot {
+      display: block; }
+    .agenda .day .session:focus .session-title,
+    .agenda .day .session:focus .session-presenter {
+      display: none; }
+  .agenda .day .session-lunch {
+    height: 70px;
+    background-color: #a62948ff; }
+  .agenda .day .session-activity {
+    background-color: #00336eff; }
+  .agenda .day .session-class {
+    background-color: #82bcffff; }
+  .agenda .day .session-blank {
+    background-color: #0b0c10ff; }
 
 @media screen and (min-width: 1440px) {
   .agenda .day {
@@ -413,5 +431,25 @@ footer {
 @media screen and (min-width: 1440px) {
   .organizer-container .organizer-item {
     width: 29%; } }
+
+form {
+  border-radius: 6px;
+  padding: 30px;
+  background: #f2f2f2ff;
+  margin: 0 auto;
+  color: #0b0c10ff;
+  font-size: larger; }
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="email"] {
+    padding: 10px;
+    width: 100%; }
+  form select {
+    padding: 10px;
+    width: 100%;
+    font-size: larger; }
+  form .input-fields {
+    display: flex;
+    flex-direction: column; }
 
 /*# sourceMappingURL=style.scss.css.map */

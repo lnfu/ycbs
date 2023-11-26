@@ -4,11 +4,11 @@ $medium: 1440px;
 $large: 2560px;
 
 /* SCSS HEX */
-$amaranth-purple: #A62948ff;
+$amaranth-purple: #a62948ff;
 $tiffany-blue-1: rgb(134, 190, 174);
 $tiffany-blue-2: #d6ebe5;
-$pearl: #E7DFC2ff;
-$oxford-blue-1: #0F1C3Eff;
+$pearl: #e7dfc2ff;
+$oxford-blue-1: #0f1c3eff;
 $oxford-blue-2: #00336eff;
 $oxford-blue-3: #0058bdff;
 $oxford-blue-4: #2088ffff;
@@ -19,96 +19,112 @@ $blue: #a9d8eb;
 $gray: rgb(44, 44, 44);
 $black: #0b0c10ff;
 
-
 $navbar-height: 75px;
 
 @font-face {
-    font-family: "LINESeed";
-    src: url("fonts/LINESeed_W_Bd.woff") format("woff");
-    font-weight: bold
+  font-family: "LINESeed";
+  src: url("fonts/LINESeed_W_Bd.woff") format("woff");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "LINESeed";
-    src: url("fonts/LINESeed_W_Rg.woff") format("woff");
-    font-weight: regular
+  font-family: "LINESeed";
+  src: url("fonts/LINESeed_W_Rg.woff") format("woff");
+  font-weight: regular;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: LINESeed;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: LINESeed;
+  user-select: none;
+  -webkit-user-select: none; /* Chrome Safari */
+  -moz-user-select: none; /* Firefox */
 }
 
 a {
-    color: $white;
-    text-decoration: none;
+  color: $white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: $pearl;
-    transition: 0.3s;
+  color: $pearl;
+  transition: 0.3s;
 }
 
 body {
-    /* 留給 nav bar */
-    padding-top: $navbar-height;
+  /* 留給 nav bar */
+  padding-top: $navbar-height;
+  min-height: 100vh;
 }
 
 .container {
-    h1 {
-        font-size: xx-large;
-        margin-bottom: 12px;
-    }
+  h1 {
+    font-size: xx-large;
+    margin-bottom: 12px;
+  }
 
-    h2 {
-        font-size: x-large;
-        margin-bottom: 10px;
-    }
+  h2 {
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
 
-    h3 {
-        font-size: larger;
-    }
+  h3 {
+    font-size: larger;
+  }
 
-    p {
-        font-size: larger;
-        margin-bottom: 10px;
-    }
+  p {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .bg-1 {
-    background: radial-gradient(ellipse at center, $tiffany-blue-1, $oxford-blue-2);
-    // background: radial-gradient(circle at center, yellow, red);
-    color: $white;
+  background: radial-gradient(
+    ellipse at center,
+    $tiffany-blue-1,
+    $oxford-blue-2
+  );
+  // background: radial-gradient(circle at center, yellow, red);
+  color: $white;
 }
 
 .bg-2 {
-    background:
-        radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
-        radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
-        radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
-        radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
-        radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
-    color: $white;
+  background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+    radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+  color: $white;
 }
 
 .bg-3 {
-    background: conic-gradient(at 0% 0%, $snow, $white);
-    color: $gray;
+  background: conic-gradient(at 0% 0%, $snow, $white);
+  color: $gray;
+}
+
+.bg-4 {
+  background: $black;
+  color: snow;
+}
+
+.bg-5 {
+  background: $oxford-blue-3;
+  color: snow;
 }
 
 .content {
-    margin: 0 10px;
-    padding: 30px 0 50px;
+  margin: 0 10px;
+  padding: 30px 0 50px;
 }
 
 .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
