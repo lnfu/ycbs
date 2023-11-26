@@ -1,30 +1,30 @@
-@media screen and (min-width:$medium) {
-    .hero {
-        .hero-wrapper {
-            margin: 0 auto;
-            padding: 150px 35px;
-            max-width: $medium;
+@media screen and (min-width: $medium) {
+  .hero {
+    .hero-wrapper {
+      margin: 0 auto;
+      padding: 360px 35px;
+      max-width: $medium;
 
-            h1 {
-                font-size: 72px;
-            }
+      h1 {
+        font-size: 72px;
+      }
 
-            p {
-                font-size: 24px;
-            }
-        }
+      p {
+        font-size: 24px;
+      }
     }
+  }
 
-    .intern-info {
-        width: 1200px;
-        margin: 40px auto;
+  .intern-info {
+    width: 1200px;
+    margin: 40px auto;
 
-        ol {
-            padding-left: 35px;
+    ol {
+      padding-left: 35px;
 
-            li {
-                font-size: xx-large;
-            }
-        }
+      li {
+        font-size: xx-large;
+      }
     }
+  }
 }

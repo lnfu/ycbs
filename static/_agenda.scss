@@ -1,13 +1,13 @@
 .agenda {
   .day {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     .session {
-      // padding: 10px;
       color: $white;
-      background-color: $tiffany-blue-1;
-      //   box-shadow: 4px 4px $tiffany-blue-1;
+      background-color: $oxford-blue-4;
+
+      border-radius: 5px;
 
       display: flex;
       flex-direction: column;
@@ -15,6 +15,7 @@
 
       .time-slot {
         display: none;
+        font-size: x-large;
       }
 
       .session-title,
@@ -23,11 +24,11 @@
       }
 
       box-sizing: border-box;
-      border: 1px solid #ccc;
     }
 
     .session:hover {
-      background: none;
+      background-color: #ddd;
+      color: $black;
 
       .time-slot {
         display: block;
@@ -39,8 +40,9 @@
       }
     }
 
-    .session:focus {
-      background: none;
+    .session-display-time {
+      background-color: #ddd;
+      color: $black;
 
       .time-slot {
         display: block;
@@ -52,9 +54,9 @@
       }
     }
 
-    // .session + .session {
-    //   margin-top: 2px;
-    // }
+    .session + .session {
+      margin-top: 20px;
+    }
 
     .session-lunch {
       height: 70px;
@@ -80,11 +82,11 @@
       //   rgba(76, 142, 203, 1) 49%,
       //   rgba(233, 168, 198, 1) 100%
       // );
-      background-color: $oxford-blue-5;
+      background-color: $oxford-blue-3;
     }
     .session-blank {
-      // height: 50px;
-      background-color: $black;
+      display: none;
+      background-color: #ddd;
     }
   }
 }

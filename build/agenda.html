@@ -29,11 +29,14 @@
         <!-- nav -->
         <input type="checkbox" name="" id="nav-toggle">
         <nav>
+            <a href="home.html">首頁</a>
             <a href="agenda.html">活動議程</a>
             <a href="intern.html">實習計畫</a>
             <a href="organizer.html">主辦單位</a>
             <a href="admission.html">錄取名單</a>
-            <a href="/signup" class="nav-signup-btn">立即報名</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5XJTVJsTRjgK6kiRFnum5y0raRYppmrxOk5FtLvcuckC3aw/viewform"
+                class="nav-signup-btn" target="_blank">立即報名</a>
+            <!-- <a href="/signup" class="nav-signup-btn">立即報名</a> -->
         </nav>
         <label for="nav-toggle" class="nav-btn">
             <div></div>
@@ -59,213 +62,176 @@
         <br>
 
         <div class="agenda flexbox">
-            <div class="day day-1">
+            <div class="day" id="day-1">
                 <h2>1 月 29 日（一）</h2>
                 <br>
-                <div class="session session-1">
-                    <!-- 30 -->
-                    <h4 class="time-slot">9:00am</h4>
-                    <h3 class="session-title">報到</h3>
+                <div class="session session-blank" id="session-1" data-start-time="08:30" data-end-time="09:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-2">
-                    <!-- 10 -->
-                    <h4 class="time-slot">9:30am</h4>
+                <div class="session" id="session-2" data-start-time="09:00" data-end-time="09:30">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">學員報到</h3>
+                    <span class="session-presenter"></span>
+                </div>
+                <div class="session session-opening" id="session-3" data-start-time="09:30" data-end-time="09:40">
+                    <h4 class="time-slot"></h4>
                     <h3 class="session-title">開場致詞</h3>
                     <span class="session-presenter">吳漢忠</span>
                 </div>
-                <div class="session session-3">
-                    <!-- 60 -->
-                    <h4 class="time-slot">9:40am</h4>
+                <div class="session session-activity" id="session-4" data-start-time="09:40" data-end-time="10:40">
+                    <h4 class="time-slot"></h4>
                     <h3 class="session-title">破冰、導覽園區</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-4">
-                    <!-- 30 -->
-                    <h4 class="time-slot">10:40am</h4>
-                    <h3 class="session-title">生技商業概念介紹</h3>
-                    <span class="session-presenter">黃文英</span>
-                </div>
-                <div class="session session-5">
-                    <!-- 30 -->
-                    <h4 class="time-slot">11:10am</h4>
-                    <h3 class="session-title">專家教你做 BP 簡報</h3>
-                    <span class="session-presenter">袁照晶</span>
-                </div>
-                <div class="session session-6">
-                    <!-- 20 -->
-                    <h4 class="time-slot">11:40am</h4>
-                    <h3 class="session-title">選題 + 小隊討論</h3>
+                <div class="session session-blank" id="session-5" data-start-time="10:40" data-end-time="10:50">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-launch">
-                    <!-- 90 -->
-                    <h4 class="time-slot">12:00am</h4>
+                <div class="session session-class" id="session-6" data-start-time="10:50" data-end-time="12:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">生技商業概念介紹</h3>
+                    <span class="session-presenter">中央研究院基因體研究中心研究員 沈家寧</span>
+                </div>
+                <div class="session session-lunch" id="session-7" data-start-time="12:00" data-end-time="13:00">
+                    <h4 class="time-slot"></h4>
                     <h3 class="session-title">午餐</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-8">
-                    <!-- 120 -->
-                    <h4 class="time-slot">13:30am</h4>
-                    <h3 class="session-title">產業沙龍</h3>
-                    <span class="session-presenter">褚家容、張郁芬、廖仲麒、呂采修</span>
-                </div>
-                <div class="session session-9">
-                    <!-- 10 -->
-                    <h4 class="time-slot">15:30am</h4>
-                    <h3 class="session-title">休息時間</h3>
+                <div class="session session-blank" id="session-8" data-start-time="13:00" data-end-time="13:10">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-10">
-                    <!-- 70 -->
-                    <h4 class="time-slot">15:40am</h4>
-                    <h3 class="session-title">設計思考工作坊</h3>
-                    <span class="session-presenter">黃書緯</span>
+                <div class="session session-class" id="session-9" data-start-time="13:10" data-end-time="14:10">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">專家教你做 BP 簡報</h3>
+                    <span class="session-presenter">生物技術開發中心產業發展處處長 劉韋博</span>
                 </div>
-
-
-
-
-
+                <div class="session session-blank" id="session-10" data-start-time="14:10" data-end-time="14:30">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
+                    <span class="session-presenter"></span>
+                </div>
+                <div class="session session-activity" id="session-11" data-start-time="14:30" data-end-time="16:30">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">設計思考工作坊</h3>
+                    <span class="session-presenter">義想設計工作室 Winny</span>
+                </div>
+                <div class="session session-activity" id="session-12" data-start-time="16:30" data-end-time="17:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">小隊繳交模擬創業競賽選題方向</h3>
+                    <span class="session-presenter"></span>
+                </div>
+                <div class="session session-blank" id="session-13" data-start-time="17:00" data-end-time="18:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
+                    <span class="session-presenter"></span>
+                </div>
             </div>
 
-            <div class="day day-2">
+            <div class="day" id="day-2">
                 <h2>1 月 30 日（二）</h2>
                 <br>
-                <div class="session session-1">
-                    <!-- 30 -->
-                    <h4 class="time-slot">9:00am</h4>
-                    <h3 class="session-title">報到</h3>
+                <div class="session" id="session-14" data-start-time="08:30" data-end-time="09:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">學員報到</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-2">
-                    <!-- 10 -->
-                    <h4 class="time-slot">9:30am</h4>
-                    <h3 class="session-title">開場致詞</h3>
-                    <span class="session-presenter">吳漢忠</span>
+                <div class="session session-activity" id="session-15" data-start-time="09:00" data-end-time="10:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">產業沙龍</h3>
+                    <span class="session-presenter">國家生技園區/DCB育成廠商 Pitch</span>
                 </div>
-                <div class="session session-3">
-                    <!-- 60 -->
-                    <h4 class="time-slot">9:40am</h4>
-                    <h3 class="session-title">破冰、導覽園區</h3>
+                <div class="session session-blank" id="session-16" data-start-time="10:00" data-end-time="10:10">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-4">
-                    <!-- 30 -->
-                    <h4 class="time-slot">10:40am</h4>
-                    <h3 class="session-title">生技商業概念介紹</h3>
-                    <span class="session-presenter">黃文英</span>
-                </div>
-                <div class="session session-5">
-                    <!-- 30 -->
-                    <h4 class="time-slot">11:10am</h4>
-                    <h3 class="session-title">專家教你做 BP 簡報</h3>
-                    <span class="session-presenter">袁照晶</span>
-                </div>
-                <div class="session session-6">
-                    <!-- 20 -->
-                    <h4 class="time-slot">11:40am</h4>
-                    <h3 class="session-title">選題 + 小隊討論</h3>
+                <div class="session session-activity" id="session-17" data-start-time="10:10" data-end-time="12:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">小隊跑桌</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-launch">
-                    <!-- 90 -->
-                    <h4 class="time-slot">12:00am</h4>
+                <div class="session session-lunch" id="session-18" data-start-time="12:00" data-end-time="13:00">
+                    <h4 class="time-slot"></h4>
                     <h3 class="session-title">午餐</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-8">
-                    <!-- 120 -->
-                    <h4 class="time-slot">13:30am</h4>
-                    <h3 class="session-title">產業沙龍</h3>
-                    <span class="session-presenter">褚家容、張郁芬、廖仲麒、呂采修</span>
+                <div class="session session-class" id="session-19" data-start-time="13:00" data-end-time="14:30">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">生技法規概念介紹</h3>
+                    <span class="session-presenter">世界藥學會法規組共同主席 胡幼圃</span>
                 </div>
-                <div class="session session-9">
-                    <!-- 10 -->
-                    <h4 class="time-slot">15:30am</h4>
-                    <h3 class="session-title">休息時間</h3>
+                <div class="session session-blank" id="session-20" data-start-time="14:30" data-end-time="15:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-10">
-                    <!-- 70 -->
-                    <h4 class="time-slot">15:40am</h4>
-                    <h3 class="session-title">設計思考工作坊</h3>
-                    <span class="session-presenter">黃書緯</span>
+                <div class="session session-class" id="session-21" data-start-time="15:00" data-end-time="16:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">專家教你 Getting WOW！</h3>
+                    <span class="session-presenter">永悅健康創辦人兼執行長 陳俊嘉</span>
                 </div>
-
-
-
-
-
+                <div class="session session-activity" id="session-22" data-start-time="16:00" data-end-time="18:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">小隊繳交模擬創業競賽選題方向 + 試報</h3>
+                    <span class="session-presenter"></span>
+                </div>
             </div>
-            <div class="day day-3">
+
+
+
+            <div class="day" id="day-3">
                 <h2>1 月 31 日（三）</h2>
                 <br>
-                <div class="session session-1">
-                    <!-- 30 -->
-                    <h4 class="time-slot">9:00am</h4>
-                    <h3 class="session-title">報到</h3>
+                <div class="session" id="session-23" data-start-time="08:30" data-end-time="09:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">學員報到</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-2">
-                    <!-- 10 -->
-                    <h4 class="time-slot">9:30am</h4>
-                    <h3 class="session-title">開場致詞</h3>
-                    <span class="session-presenter">吳漢忠</span>
-                </div>
-                <div class="session session-3">
-                    <!-- 60 -->
-                    <h4 class="time-slot">9:40am</h4>
-                    <h3 class="session-title">破冰、導覽園區</h3>
+                <div class="session session-activity" id="session-24" data-start-time="09:00" data-end-time="10:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">正裝拍照</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-4">
-                    <!-- 30 -->
-                    <h4 class="time-slot">10:40am</h4>
-                    <h3 class="session-title">生技商業概念介紹</h3>
-                    <span class="session-presenter">黃文英</span>
-                </div>
-                <div class="session session-5">
-                    <!-- 30 -->
-                    <h4 class="time-slot">11:10am</h4>
-                    <h3 class="session-title">專家教你做 BP 簡報</h3>
-                    <span class="session-presenter">袁照晶</span>
-                </div>
-                <div class="session session-6">
-                    <!-- 20 -->
-                    <h4 class="time-slot">11:40am</h4>
-                    <h3 class="session-title">選題 + 小隊討論</h3>
+                <div class="session session-class" id="session-25" data-start-time="10:00" data-end-time="11:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">創投帶你增加籌資力</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-launch">
-                    <!-- 90 -->
-                    <h4 class="time-slot">12:00am</h4>
+                <div class="session session-activity" id="session-26" data-start-time="11:00" data-end-time="12:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">隊輔救援</h3>
+                    <span class="session-presenter"></span>
+                </div>
+                <div class="session session-lunch" id="session-27" data-start-time="12:00" data-end-time="13:00">
+                    <h4 class="time-slot"></h4>
                     <h3 class="session-title">午餐</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-8">
-                    <!-- 120 -->
-                    <h4 class="time-slot">13:30am</h4>
-                    <h3 class="session-title">產業沙龍</h3>
-                    <span class="session-presenter">褚家容、張郁芬、廖仲麒、呂采修</span>
-                </div>
-                <div class="session session-9">
-                    <!-- 10 -->
-                    <h4 class="time-slot">15:30am</h4>
-                    <h3 class="session-title">休息時間</h3>
+                <div class="session session-activity" id="session-28" data-start-time="13:00" data-end-time="14:30">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">模擬創業競賽發表</h3>
                     <span class="session-presenter"></span>
                 </div>
-                <div class="session session-10">
-                    <!-- 70 -->
-                    <h4 class="time-slot">15:40am</h4>
-                    <h3 class="session-title">設計思考工作坊</h3>
-                    <span class="session-presenter">黃書緯</span>
+                <div class="session session-activity" id="session-29" data-start-time="14:30" data-end-time="15:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">第二屆實習生招募</h3>
+                    <span class="session-presenter"></span>
                 </div>
-
-
-
-
-
+                <div class="session session-activity" id="session-30" data-start-time="15:00" data-end-time="16:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title">評審講評 + 頒獎</h3>
+                    <span class="session-presenter"></span>
+                </div>
+                <div class="session session-blank" id="session-31" data-start-time="16:00" data-end-time="18:00">
+                    <h4 class="time-slot"></h4>
+                    <h3 class="session-title"></h3>
+                    <span class="session-presenter"></span>
+                </div>
             </div>
         </div>
 
@@ -274,6 +240,8 @@
 
 </section>
 
+
+<script src="static/agenda.js"></script>
 
 
     </div>
