@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         element.style.height = parseInt(element.style.height) - 60 + "px";
       }
       if (element.id === "session-3") {
-        console.log(element.style.height);
         element.style.height = parseInt(element.style.height) + 60 + "px";
       }
     }

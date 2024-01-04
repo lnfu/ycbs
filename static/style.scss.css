@@ -4,20 +4,50 @@
 /* MEDIA */
 /* SCSS HEX */
 @font-face {
-  font-family: "LINESeed";
-  src: url("fonts/LINESeed_W_Bd.woff") format("woff");
+  font-family: "LINESeedJP";
+  src: url("fonts/LINESeedJP_OTF_Bd.woff") format("woff");
   font-weight: bold; }
 
 @font-face {
-  font-family: "LINESeed";
-  src: url("fonts/LINESeed_W_Rg.woff") format("woff");
-  font-weight: regular; }
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Black.ttf") format("truetype");
+  font-weight: 800; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Black.ttf") format("truetype");
+  font-weight: 800; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "HarmonyOS_Sans_TC";
+  src: url("fonts/HarmonyOS_Sans_TC_Thin.ttf") format("truetype");
+  font-weight: 100; }
 
 * {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: LINESeed;
+  font-family: "HarmonyOS_Sans_TC", serif;
   user-select: none;
   -webkit-user-select: none;
   /* Chrome Safari */
