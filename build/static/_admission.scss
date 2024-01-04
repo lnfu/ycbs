@@ -4,14 +4,23 @@
     }
 
     .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+
         .column {
             width: 100%;
 
             .item {
                 font-size: larger;
-
-                span+span {
-                    margin-left: 20px;
+                display: flex;
+                justify-content:space-around;
+                
+                .school {
+                    width: 70%;
+                }
+                .name {
+                    width: 30%;
                 }
             }
         }

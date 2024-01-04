@@ -421,20 +421,26 @@ footer {
 .admission-list img {
   width: 300px; }
 
-.admission-list .row .column {
-  width: 100%; }
-  .admission-list .row .column .item {
-    font-size: larger; }
-    .admission-list .row .column .item span + span {
-      margin-left: 20px; }
+.admission-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .admission-list .row .column {
+    width: 100%; }
+    .admission-list .row .column .item {
+      font-size: larger;
+      display: flex;
+      justify-content: space-around; }
+      .admission-list .row .column .item .school {
+        width: 70%; }
+      .admission-list .row .column .item .name {
+        width: 30%; }
 
 @media screen and (min-width: 1440px) {
   .admission-list img {
     width: 500px; }
-  .admission-list .row {
-    justify-content: left; }
-    .admission-list .row .column {
-      width: 30%; } }
+  .admission-list .row .column {
+    width: 25%; } }
 
 .organizer-container .organizer-item {
   padding: 20px;
