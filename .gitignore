@@ -1,2 +1,3 @@
 venv
 build
+*.tar.gz

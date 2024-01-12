@@ -4,6 +4,7 @@
     margin-bottom: 30px;
 
     .session {
+      padding: 0 15px;
       color: $white;
       background-color: $oxford-blue-4;
 
@@ -37,6 +38,7 @@
       .session-title,
       .session-presenter {
         display: none;
+        margin-bottom: 5px;
       }
     }
 

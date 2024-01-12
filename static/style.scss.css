@@ -355,6 +355,7 @@ footer {
   width: 100%;
   margin-bottom: 30px; }
   .agenda .day .session {
+    padding: 0 15px;
     color: #f2f2f2ff;
     background-color: #2088ffff;
     border-radius: 5px;
@@ -375,7 +376,8 @@ footer {
       display: block; }
     .agenda .day .session:hover .session-title,
     .agenda .day .session:hover .session-presenter {
-      display: none; }
+      display: none;
+      margin-bottom: 5px; }
   .agenda .day .session-display-time {
     background-color: #ddd;
     color: #0b0c10ff; }
