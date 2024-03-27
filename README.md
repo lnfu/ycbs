@@ -3,8 +3,10 @@
 使用 Python Frozen-Flask
 
 ![main page](docs/main_page.png)
+![agenda page](docs/agenda_page.png)
+![intern page](docs/intern_page.png)
 
-## Setting up the development environment 
+## Setup up environment
 
 ```
 python3 -m venv venv
