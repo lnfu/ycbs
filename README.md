@@ -4,7 +4,7 @@
 
 ![main page](docs/main_page.png)
 
-## Install
+## Setting up the development environment 
 
 ```
 python3 -m venv venv
