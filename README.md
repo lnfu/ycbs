@@ -2,7 +2,10 @@
 
 使用 Python Frozen-Flask
 
+![main page](docs/main_page.png)
+
 ## Install
+
 ```
 python3 -m venv venv
 . venv/bin/activate # on Linux, MacOS; or
@@ -11,11 +14,13 @@ pip install -r dependencies.txt
 ```
 
 ## Run
+
 ```
 python app.py
 ```
 
 ## Build
+
 ```
 FLASK_APP=app.py flask freeze
 ```
